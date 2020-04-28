@@ -30,6 +30,7 @@ class DrawView: UIView {
     override func draw(_ rect: CGRect) {
         super.draw(rect)
         
-        
+        let context = UIGraphicsGetCurrentContext()
+        context?.setStrokeColor(UIColor.red.cgColor)
     }
 }

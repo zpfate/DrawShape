@@ -13,7 +13,7 @@ class RRSecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NotificationCenter.default.post(name: NSNotification.Name("noti"), object: nil)
+        view.backgroundColor = .white
         
     }
 }
