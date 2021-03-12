@@ -21,19 +21,7 @@
 //    self.window.backgroundColor = [UIColor whiteColor];
 //    [self.window makeKeyAndVisible];
 
- 
- 
-    UIWindow *delegateWindow = [UIApplication sharedApplication].delegate.window;
-    NSLog(@"delegateWindow == %p", delegateWindow);
-    UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
-    NSLog(@"keyWindow == %p", keyWindow);
-    
-//    NSLog(@"self === %@\ndelegate == %@", self, [UIApplication sharedApplication].delegate);
-    
     return YES;
 }
-
-
-
 
 @end

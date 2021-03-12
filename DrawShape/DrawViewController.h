@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DrawViewController : UIViewController
 
+- (instancetype)initWithTypeStr:(NSString *)typeStr;
+
 @end
 
 NS_ASSUME_NONNULL_END

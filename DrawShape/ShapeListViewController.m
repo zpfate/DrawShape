@@ -25,7 +25,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.list = @[@"Line", @"Circle", @""];
+    self.list = @[kDrawShapeLine, kDrawShapeCircle, kDrawShapeRectangle];
      [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:UITableViewCell.tf_cellIdentifier];
 }
 
@@ -49,8 +49,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *title = self.list[indexPath.row];
-    DrawViewController *drawVC = [DrawViewController new];
-    drawVC.title = title;
+    DrawViewController *drawVC = [[DrawViewController alloc] initWithTypeStr:title];
     [self.navigationController pushViewController:drawVC animated:YES];
 }
 

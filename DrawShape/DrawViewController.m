@@ -8,49 +8,39 @@
 
 #import "DrawViewController.h"
 #import "ShapeView.h"
-
+#import <TFKit-Objc/UIColor+TFKit.h>
 @interface DrawViewController ()
+
+@property (nonatomic, strong) NSString *typeStr;
+
 @end
 
 @implementation DrawViewController
 
+- (instancetype)initWithTypeStr:(NSString *)typeStr {
+    self = [super init];
+    if (self) {
+        _typeStr = typeStr;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.title = self.typeStr;
+    
     self.view.backgroundColor = [UIColor whiteColor];
-
-    [self addLineView];
+    
+    [self addShapeView];
 }
 
-- (void)addLineView {
-    ShapeView *shapeView = [[ShapeView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+- (void)addShapeView {
+    
+    ShapeView *shapeView = [[ShapeView alloc] initWithFrame:CGRectMake(0, kNavigationBarHeight, kScreenWidth, 400) typeStr:self.typeStr];
+    shapeView.backgroundColor = [UIColor tf_colorWithHexString:@"f2f2f2"];
     [self.view addSubview:shapeView];
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated {
-    [super viewDidDisappear:animated];
 }
 
 @end

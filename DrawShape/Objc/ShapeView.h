@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ShapeView : UIView
 
+- (instancetype)initWithFrame:(CGRect)frame typeStr:(NSString *)typeStr;
+
 @end
 
 NS_ASSUME_NONNULL_END

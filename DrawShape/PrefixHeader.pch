@@ -1,0 +1,18 @@
+//
+//  PrefixHeader.pch
+//  DrawShape
+//
+//  Created by Twisted Fate on 2020/5/8.
+//  Copyright © 2020 Twisted Fate. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "Header.h"
+#import <TFKit-Objc/UIDevice+TFKit.h>
+#import <TFKit-Objc.h>
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

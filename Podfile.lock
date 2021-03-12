@@ -1,11 +1,11 @@
 PODS:
-  - TFKit-Objc (0.0.5):
-    - TFKit-Objc/BaseClass (= 0.0.5)
-    - TFKit-Objc/Category (= 0.0.5)
-    - TFKit-Objc/Utils (= 0.0.5)
-  - TFKit-Objc/BaseClass (0.0.5)
-  - TFKit-Objc/Category (0.0.5)
-  - TFKit-Objc/Utils (0.0.5)
+  - TFKit-Objc (0.1.0):
+    - TFKit-Objc/BaseClass (= 0.1.0)
+    - TFKit-Objc/Category (= 0.1.0)
+    - TFKit-Objc/Utils (= 0.1.0)
+  - TFKit-Objc/BaseClass (0.1.0)
+  - TFKit-Objc/Category (0.1.0)
+  - TFKit-Objc/Utils (0.1.0)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -20,9 +20,9 @@ SPEC REPOS:
     - YYKit
 
 SPEC CHECKSUMS:
-  TFKit-Objc: 4b55bdf4f33c7578433d13764dd385d3360324c4
+  TFKit-Objc: dd503e3efd77bdff83b63c3d538f2a30bce40217
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 69b8e58d049db205c179702cb39334624b02902a
+PODFILE CHECKSUM: dd084d579481ad04aca2c98d3ba003cd63ac9678
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3
